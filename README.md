@@ -1,2 +1,5 @@
 # MyAAA3DGame
- Look At My Trash Code
+
+has my code
+
+also my bobw system
