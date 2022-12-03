@@ -7,7 +7,8 @@ public class Setandloadpos : MonoBehaviour
 	// Start is called before the first frame update
 	void Start ()
 	{
-		trans.position = inv.inventory.Position;
+		try { trans.position = inv.inventory.Position; }
+		catch { }
 	}
 
 	// Update is called once per frame
@@ -15,11 +16,13 @@ public class Setandloadpos : MonoBehaviour
 	{
 		if ((Time.time % 10) >= 9)
 		{
-			inv.inventory.Position = trans.position;
+			try{ inv.inventory.Position = trans.position; }
+			catch { }
 		}
 		if (Input.GetKey(KeyCode.Escape))
 		{
-			inv.inventory.Position = new Vector3(0, (float)7.31, 0);
+			try { inv.inventory.Position = new Vector3(0, (float)7.31, 0); }
+			catch { }
 			Application.Quit();
 		}
 	}
