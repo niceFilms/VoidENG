@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class Setandloadpos : MonoBehaviour
 {
 	public SaveData inv;
@@ -18,6 +20,7 @@ public class Setandloadpos : MonoBehaviour
 		{
 			try{ inv.inventory.Position = trans.position; }
 			catch { }
+			
 		}
 		if (Input.GetKey(KeyCode.Escape))
 		{
