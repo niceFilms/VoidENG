@@ -7,6 +7,7 @@ public class openworld : MonoBehaviour
 	public GameObject Section;
 	public Transform trns;
 	public Vector3 offset;
+	public Quaternion rotation;
 	public bool test;
 	bool touched;
 	bool spwn;
@@ -45,6 +46,7 @@ public class openworld : MonoBehaviour
 		{
 			GameObject OTJ = GameObject.Instantiate(Section, new Vector3(trns.position.x + offset.x, trns.position.y + offset.y, trns.position.z + offset.z), Quaternion.identity);
 			OTJ.transform.parent = trns.transform;
+			OTJ.transform.rotation = rotation;
 			Destroy(OTJ, 0.02f);
 		}
 	}
@@ -57,6 +59,7 @@ public class openworld : MonoBehaviour
 				spwn = false;
 				GameObject OTJ = GameObject.Instantiate(Section, new Vector3(trns.position.x + offset.x, trns.position.y + offset.y, trns.position.z + offset.z), Quaternion.identity);
 				OTJ.transform.parent = trns.transform;
+				OTJ.transform.rotation = rotation;
 				while(touched == true)
 				{
 					yield return new WaitForSeconds(0.02f);
