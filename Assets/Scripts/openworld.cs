@@ -6,6 +6,8 @@ public class openworld : MonoBehaviour
 {
 	public GameObject Section;
 	public Transform trns;
+	public Vector3 offset;
+	public bool test;
 	bool touched;
 	bool spwn;
 	GameObject OTJ;
@@ -35,7 +37,16 @@ public class openworld : MonoBehaviour
 	[System.Obsolete]
 	public void FixedUpdate ()
 	{
-		StartCoroutine(OBJect());
+		if (!test)
+		{
+			StartCoroutine(OBJect());
+		}
+		else
+		{
+			GameObject OTJ = GameObject.Instantiate(Section, new Vector3(trns.position.x + offset.x, trns.position.y + offset.y, trns.position.z + offset.z), Quaternion.identity);
+			OTJ.transform.parent = trns.transform;
+			Destroy(OTJ, 0.02f);
+		}
 	}
 		IEnumerator OBJect()
 	{
@@ -44,7 +55,7 @@ public class openworld : MonoBehaviour
 			if (spwn)
 			{
 				spwn = false;
-				GameObject OTJ = GameObject.Instantiate(Section, new Vector3(trns.position.x, trns.position.y, trns.position.z), Quaternion.identity);
+				GameObject OTJ = GameObject.Instantiate(Section, new Vector3(trns.position.x + offset.x, trns.position.y + offset.y, trns.position.z + offset.z), Quaternion.identity);
 				OTJ.transform.parent = trns.transform;
 				while(touched == true)
 				{

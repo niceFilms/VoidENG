@@ -1811,7 +1811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811110314219255969, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5999985
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 1811110314219255969, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1850,9 +1850,21 @@ PrefabInstance:
       value: Open World Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 8313240024292351476, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
+      propertyPath: test
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313240024292351476, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
       propertyPath: Section
       value: 
       objectReference: {fileID: 2150495220723469035, guid: 6bccac8d38f7c7649988ef169df36010, type: 3}
+    - target: {fileID: 8313240024292351476, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
+      propertyPath: offset.x
+      value: 7.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8313240024292351476, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
+      propertyPath: offset.y
+      value: 0.39
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b2e0c5f281a0c9a4a8c151db18c37dc6, type: 3}
