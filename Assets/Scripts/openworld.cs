@@ -34,8 +34,6 @@ public class openworld : MonoBehaviour
 			}
 		}
 	}
-
-	[System.Obsolete]
 	public void FixedUpdate ()
 	{
 		if (!test)
