@@ -240,7 +240,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25082
+  m_Name: pb_Mesh25088
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1327,7 +1327,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &324896898
 GameObject:
@@ -2574,9 +2574,9 @@ GameObject:
   - component: {fileID: 615776011}
   - component: {fileID: 615776010}
   - component: {fileID: 615776009}
-  - component: {fileID: 615776008}
   - component: {fileID: 615776013}
   - component: {fileID: 615776012}
+  - component: {fileID: 615776014}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -2584,20 +2584,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &615776008
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615776007}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &615776009
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2693,6 +2679,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileX: 10
   tileY: 10
+--- !u!136 &615776014
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615776007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 1.9999999
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: -0.00000011920929, z: -0.00000008940697}
 --- !u!1 &616038714
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,10 +3263,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 739570793}
-  - component: {fileID: 739570792}
   - component: {fileID: 739570791}
+  - component: {fileID: 739570798}
   - component: {fileID: 739570794}
   - component: {fileID: 739570796}
+  - component: {fileID: 739570797}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -3316,14 +3317,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &739570792
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 739570789}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &739570793
 Transform:
   m_ObjectHideFlags: 0
@@ -3332,8 +3325,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739570789}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.506633, y: 44.116554, z: 21.036716}
-  m_LocalScale: {x: 0.44, y: 1, z: 1}
+  m_LocalPosition: {x: 6.42, y: 44.116554, z: 21.036716}
+  m_LocalScale: {x: 3.38, y: 0.08, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1405628}
@@ -3366,8 +3359,30 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &739570797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739570789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956bc8cf48d2a614d81f854c466b6f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileX: 80
+  tileY: 10000
+--- !u!33 &739570798
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739570789}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &747787788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5948,9 +5963,9 @@ GameObject:
   - component: {fileID: 1252529795}
   - component: {fileID: 1252529794}
   - component: {fileID: 1252529793}
-  - component: {fileID: 1252529792}
   - component: {fileID: 1252529797}
   - component: {fileID: 1252529796}
+  - component: {fileID: 1252529798}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -5958,20 +5973,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &1252529792
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252529791}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &1252529793
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6030,7 +6031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252529791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.056633, y: 34.34655, z: 25.086716}
+  m_LocalPosition: {x: 7.48, y: 34.34655, z: 25.086716}
   m_LocalScale: {x: 1, y: 9.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6067,6 +6068,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileX: 10
   tileY: 10
+--- !u!136 &1252529798
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252529791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 1.9999999
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: -0.00000011920929, z: -0.00000008940697}
 --- !u!1 &1263802446
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,8 +7676,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1527610780}
-  - component: {fileID: 1527610782}
   - component: {fileID: 1527610781}
+  - component: {fileID: 1527610782}
   m_Layer: 0
   m_Name: NES - Super Mario Bros - Tileset_0 (3)
   m_TagString: Untagged
@@ -7748,7 +7763,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &1528568620
 GameObject:
@@ -9871,7 +9886,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!1 &1888651395
 GameObject:
@@ -10522,7 +10537,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 2
   m_SpriteSortPoint: 0
 --- !u!4 &1970970976
 Transform:
@@ -11178,7 +11193,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25188
+  m_Name: pb_Mesh25194
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
