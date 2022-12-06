@@ -328,7 +328,7 @@ Transform:
   - {fileID: 5338927050500306408}
   - {fileID: 392916131}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &5338927051937434087
 CharacterController:
@@ -387,8 +387,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
   trans: {fileID: 5338927051937434084}
-  CurrentLevel: 
-  DefauleLevel: 
 --- !u!114 &5338927052110749542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,8 +445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
   trans: {fileID: 5338927051937434084}
-  CurrentLevel: 
-  DefauleLevel: SampleScene
 --- !u!1 &5338927052007509030
 GameObject:
   m_ObjectHideFlags: 0
