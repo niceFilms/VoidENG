@@ -1,14 +1,13 @@
 on:
-  push:
+  pull_request:
     branches:
-    - main
-    - release/*
+    - release
+			beta
+
 jobs:
-  UnityBuilder:
+  my_job:
     - name: UnityBuilder
-    # You may pin to the exact commit or the version.
-    # uses: game-ci/unity-builder@9f79830454d37cd9e70c4c3b73d26c06bcce2b2a
-      uses: game-ci/unity-builder@v2.1.2
+    - uses: game-ci/unity-builder@v2.1.2
       with:
     # Platform that the build should target.
       targetPlatform: # default is 
