@@ -5,6 +5,7 @@ public class Setandloadpos : MonoBehaviour
 {
 	public SaveData inv;
 	public Transform trans;
+	public bool autosave;
 	
 	// Start is called before the first frame update
 	void Start ()
@@ -16,17 +17,14 @@ public class Setandloadpos : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		if ((Time.time % 10) >= 9)
+		if (autosave)
 		{
-			try{ inv.inventory.Position = trans.position; }
-			catch { }
-			
-		}
-		if (Input.GetKey(KeyCode.Escape))
-		{
-			try { inv.inventory.Position = new Vector3(0, (float)7.31, 0); }
-			catch { }
-			Application.Quit();
+			if ((Time.time % 10) >= 9)
+			{
+				try { inv.inventory.Position = trans.position; }
+				catch { }
+
+			}
 		}
 	}
 }
