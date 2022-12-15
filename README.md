@@ -1,6 +1,5 @@
 # MyAAA3DGame
 
-has my code
+Uses Unitys latest version always :)
 
-also my bobw system
-also my open world system
+also has my bobw system and my open world system
