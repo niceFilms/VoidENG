@@ -5,6 +5,7 @@ public class Setandloadpos : MonoBehaviour
 {
 	public SaveData inv;
 	public Transform trans;
+	public PlayerMovement movement;
 	public bool autosave;
 	
 	// Start is called before the first frame update
@@ -19,12 +20,19 @@ public class Setandloadpos : MonoBehaviour
 	{
 		if (autosave)
 		{
-			if ((Time.time % 10) >= 9)
+			try
 			{
-				try { inv.inventory.Position = trans.position; }
-				catch { }
+				if (movement.isGrounded)
+				{
+					if ((Time.time % 10) >= 9)
+					{
+						try { inv.inventory.Position = trans.position; }
+						catch { }
 
+					}
+				}
 			}
+			catch { }
 		}
 	}
 }
