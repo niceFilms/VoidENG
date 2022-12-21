@@ -809,4 +809,4 @@ MonoBehaviour:
     m_Value: 1
   m_RayMaxIterationsRT:
     m_OverrideState: 1
-    m_Value: 128
+    m_Value: 64
