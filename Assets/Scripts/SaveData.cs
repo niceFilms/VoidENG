@@ -38,7 +38,6 @@ public class Inventory
 {
     public string Level;
     public Vector3 Position;
-    public bool isFull;
     public List<Items> items = new List<Items>();
 }
 

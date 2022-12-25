@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 
 public class SwitchSceneOnClick : MonoBehaviour
 {
+	public SaveData savedata;
 	public string nextscene;
 	public void OnButtonPress ()
 	{
