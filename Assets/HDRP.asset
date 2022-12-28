@@ -15,7 +15,7 @@ MonoBehaviour:
   m_RenderPipelineSettings:
     supportShadowMask: 1
     supportSSR: 1
-    supportSSRTransparent: 0
+    supportSSRTransparent: 1
     supportSSAO: 1
     supportSSGI: 1
     supportSubsurfaceScattering: 1
@@ -24,9 +24,9 @@ MonoBehaviour:
       m_SchemaId:
         m_Id: With3Levels
     supportVolumetrics: 1
-    supportVolumetricClouds: 0
+    supportVolumetricClouds: 1
     supportLightLayers: 0
-    supportWater: 0
+    supportWater: 1
     waterSimulationResolution: 128
     waterCPUSimulation: 0
     supportDistortion: 1
@@ -36,7 +36,7 @@ MonoBehaviour:
     colorBufferFormat: 74
     supportCustomPass: 1
     customBufferFormat: 8
-    supportedLitShaderMode: 2
+    supportedLitShaderMode: 3
     planarReflectionResolution:
       m_Values: 000100000004000000040000
       m_SchemaId:

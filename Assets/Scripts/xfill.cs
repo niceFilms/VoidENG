@@ -13,6 +13,6 @@ public class xfill : MonoBehaviour {
     void Update()
     {
 		// Set the UI element's scale so that it maintains its aspect ratio
-		rectTransform.localScale = new Vector3(Screen.width/400, Screen.width/400, 1);
+		rectTransform.localScale = new UnityEngine.Vector3(Screen.width/400, Screen.width/400, 1);
 	}
 }
