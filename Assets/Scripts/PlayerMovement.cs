@@ -23,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     public bool isGrounded;
 
+    public void ToggleMovement ()
+    {
+        this.enabled = !this.enabled;
+    }
 
 	// Update is called once per frame
 	void Update()
