@@ -12,6 +12,8 @@
 
 
 
+extern void LerpTransform_Update_m5D05E3F5788CE3E2485E790422E0D31417E0054F (void);
+extern void LerpTransform__ctor_m71F96D4681600D8115ECB055A637F1571781B25C (void);
 extern void ExtrasMenu_OnClickedButton_mCE1FBD9C6282A1DA196102C1D796E9C012F02C6E (void);
 extern void ExtrasMenu__ctor_mD2E768FE7098D0AB5AD196C2A163C5F66ADA6AB4 (void);
 extern void GifTexture_Start_m5FEC38F41364A28EABC2276C42EE24049213F5D1 (void);
@@ -53,6 +55,9 @@ extern void U3COBJectU3Ed__11_MoveNext_mA85270568B499F8A9FBDC1FBC5CC620EDFB18D58
 extern void U3COBJectU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m59031CA24E35BC522782DDEB4677E2AD78135099 (void);
 extern void U3COBJectU3Ed__11_System_Collections_IEnumerator_Reset_mA30AF2007ED0A42FBBE7E9B189B844D0D984309B (void);
 extern void U3COBJectU3Ed__11_System_Collections_IEnumerator_get_Current_m3D9DC93CE82B79EA00E711B59B004910DEC4325E (void);
+extern void Papercut2dBillboard_OnValidate_m7EE1213E62DC706779A9D97719889749948FCE42 (void);
+extern void Papercut2dBillboard_Update_m924C12BDC7E16C9CE2306E0475D793B1ABE424A9 (void);
+extern void Papercut2dBillboard__ctor_m06B14F996D07AF643A10E876C3FC47F924DBFEFB (void);
 extern void PauseMenu_Update_m5097E74BFD4385B73BA9EF7198886DCEC7DF9A83 (void);
 extern void PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831 (void);
 extern void PauseMenu_Pause_m5C6B949CB19184E7227C891FF3C8AF707689AAF0 (void);
@@ -122,8 +127,10 @@ extern void xfill__ctor_m3722434A5355C0223B0821B65D4A0CC7101E2FF9 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5 (void);
-static Il2CppMethodPointer s_methodPointers[110] = 
+static Il2CppMethodPointer s_methodPointers[115] = 
 {
+	LerpTransform_Update_m5D05E3F5788CE3E2485E790422E0D31417E0054F,
+	LerpTransform__ctor_m71F96D4681600D8115ECB055A637F1571781B25C,
 	ExtrasMenu_OnClickedButton_mCE1FBD9C6282A1DA196102C1D796E9C012F02C6E,
 	ExtrasMenu__ctor_mD2E768FE7098D0AB5AD196C2A163C5F66ADA6AB4,
 	GifTexture_Start_m5FEC38F41364A28EABC2276C42EE24049213F5D1,
@@ -165,6 +172,9 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	U3COBJectU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m59031CA24E35BC522782DDEB4677E2AD78135099,
 	U3COBJectU3Ed__11_System_Collections_IEnumerator_Reset_mA30AF2007ED0A42FBBE7E9B189B844D0D984309B,
 	U3COBJectU3Ed__11_System_Collections_IEnumerator_get_Current_m3D9DC93CE82B79EA00E711B59B004910DEC4325E,
+	Papercut2dBillboard_OnValidate_m7EE1213E62DC706779A9D97719889749948FCE42,
+	Papercut2dBillboard_Update_m924C12BDC7E16C9CE2306E0475D793B1ABE424A9,
+	Papercut2dBillboard__ctor_m06B14F996D07AF643A10E876C3FC47F924DBFEFB,
 	PauseMenu_Update_m5097E74BFD4385B73BA9EF7198886DCEC7DF9A83,
 	PauseMenu_Resume_mA45D6E4F27172EF775FC2D3F694BE90882DBE831,
 	PauseMenu_Pause_m5C6B949CB19184E7227C891FF3C8AF707689AAF0,
@@ -235,8 +245,10 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647,
 	UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5,
 };
-static const int32_t s_InvokerIndices[110] = 
+static const int32_t s_InvokerIndices[115] = 
 {
+	9428,
+	9428,
 	9428,
 	9428,
 	9428,
@@ -278,6 +290,9 @@ static const int32_t s_InvokerIndices[110] =
 	9262,
 	9428,
 	9262,
+	9428,
+	9428,
+	9428,
 	9428,
 	9428,
 	9428,
@@ -352,7 +367,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	110,
+	115,
 	s_methodPointers,
 	0,
 	NULL,
