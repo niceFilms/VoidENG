@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
@@ -48,6 +49,7 @@ public class SettingMenu : MonoBehaviour
 
         float prefs = PlayerPrefs.GetFloat("Volume");
         Volume.value = prefs;
+        audioMixer.SetFloat("MasterVol", prefs);
 	}
 
 	public void SetVolume (float volume)

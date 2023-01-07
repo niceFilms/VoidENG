@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 5338927052110749542}
   - component: {fileID: 5338927052110749547}
   - component: {fileID: 707999757}
+  - component: {fileID: 5640682185308586796}
   m_Layer: 3
   m_Name: First Person Player
   m_TagString: Player
@@ -502,6 +503,20 @@ MonoBehaviour:
   CurrentScene: SampleScene
   olHealth: 100
   test: 1
+--- !u!114 &5640682185308586796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5338927051937434086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc4842fb94fbf046bf4a8411e43afb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  Settings: {fileID: 0}
 --- !u!1 &5338927052007509030
 GameObject:
   m_ObjectHideFlags: 0

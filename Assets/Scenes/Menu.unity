@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10278.911, g: 9813.649, b: 10479.821, a: 1}
+  m_IndirectSpecularColor: {r: 9632.033, g: 8751.358, b: 8196.161, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -715,11 +715,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4419177871290945192, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
   m_PrefabInstance: {fileID: 1597375844}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &488479844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9025331661629774848, guid: 4c25217449955604aac662170a67f949, type: 3}
-  m_PrefabInstance: {fileID: 9025331661412941924}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &488479845 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9025331661629774849, guid: 4c25217449955604aac662170a67f949, type: 3}
@@ -982,7 +977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fad51f91e806a45bbef4785a8b1c9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: {fileID: 488479844}
+  Menu: {fileID: 9025331661412941925}
 --- !u!1 &594157448
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,6 +4180,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1654140338}
     m_Modifications:
+    - target: {fileID: 9025331659875859652, guid: 4c25217449955604aac662170a67f949, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025331659875859652, guid: 4c25217449955604aac662170a67f949, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025331659875859652, guid: 4c25217449955604aac662170a67f949, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025331660085012924, guid: 4c25217449955604aac662170a67f949, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9025331660085012924, guid: 4c25217449955604aac662170a67f949, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9025331661629774848, guid: 4c25217449955604aac662170a67f949, type: 3}
       propertyPath: m_Name
       value: Settings
@@ -4278,3 +4293,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c25217449955604aac662170a67f949, type: 3}
+--- !u!1 &9025331661412941925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3297224417872146532, guid: 4c25217449955604aac662170a67f949, type: 3}
+  m_PrefabInstance: {fileID: 9025331661412941924}
+  m_PrefabAsset: {fileID: 0}

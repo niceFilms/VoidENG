@@ -4,6 +4,7 @@ public class PauseMenu : MonoBehaviour
 {
     // A reference to the pause menu UI game object
     public GameObject pauseMenuUI;
+    public GameObject Settings;
 
     // Update is called once per frame
     void Update()
@@ -28,6 +29,7 @@ public class PauseMenu : MonoBehaviour
     {
         // Hide the pause menu UI
         pauseMenuUI.SetActive(false);
+        Settings.SetActive(false);
 		Cursor.lockState = CursorLockMode.Locked;
 
 		// Set the time scale back to 1, which will unpause the game
