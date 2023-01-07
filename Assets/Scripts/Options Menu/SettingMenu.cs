@@ -19,7 +19,7 @@ public class SettingMenu : MonoBehaviour
 
 	private float val;
 
-	private void Awake ()
+	private void Start ()
 	{
         resolutions = Screen.resolutions;
 
@@ -45,12 +45,16 @@ public class SettingMenu : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
 
         qualityDropdown.value = QualitySettings.GetQualityLevel();
-		
+
+        float prefs = PlayerPrefs.GetFloat("Volume");
+        Volume.value = prefs;
 	}
 
 	public void SetVolume (float volume)
     {
         audioMixer.SetFloat("MasterVol", volume);
+        PlayerPrefs.SetFloat("Volume", volume);
+        PlayerPrefs.Save();
     }
 
     public void SetQuality (int qualityIndex)
