@@ -6,17 +6,20 @@ public class SaveData : MonoBehaviour
 {
     public Inventory inventory = new Inventory();
 
+    public bool save;
+
 	private void Start ()
 	{
         LoadFromJson();
 	}
-	private void FixedUpdate ()
-    {
-        if ((Time.time % 10) >= 9)
+	private void Update ()
+	{
+		if (save)
         {
+            save = false;
             SaveToJson();
         }
-    }
+	}
 	public void SaveToJson() 
     {
         string inventoryData = JsonUtility.ToJson(inventory);
@@ -38,6 +41,7 @@ public class Inventory
 {
     public string Level;
     public Vector3 Position;
+    public Quaternion Rotation;
     public List<Items> items = new List<Items>();
 }
 

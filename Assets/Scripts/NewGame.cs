@@ -15,6 +15,7 @@ public class NewGame : MonoBehaviour
     IEnumerator newgame ()
     {
         savedata.inventory.Position = newgamepos;
+        savedata.inventory.Rotation = new Quaternion(0, 0, 0, 0);
         savedata.SaveToJson();
 		yield return new WaitForSeconds(0.1f);
 		UnityEngine.SceneManagement.SceneManager.LoadScene(nextscene);

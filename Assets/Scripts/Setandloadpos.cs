@@ -1,23 +1,28 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Setandloadpos : MonoBehaviour
 {
 	public SaveData inv;
-	public Transform trans;
 	public PlayerMovement movement;
 	public bool autosave;
 	
 	// Start is called before the first frame update
 	void Start ()
 	{
-		try { trans.position = inv.inventory.Position; }
+		try { this.transform.position = inv.inventory.Position; }
+		catch { }
+		try { this.transform.rotation = inv.inventory.Rotation; }
 		catch { }
 	}
 
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
+		try { inv.inventory.Position = this.transform.position; }
+		catch { }
+		try { inv.inventory.Rotation = this.transform.rotation; }
+		catch { }
+
 		if (autosave)
 		{
 			try
@@ -26,13 +31,24 @@ public class Setandloadpos : MonoBehaviour
 				{
 					if ((Time.time % 10) >= 9)
 					{
-						try { inv.inventory.Position = trans.position; }
+						
+						try { inv.SaveToJson(); }
 						catch { }
-
 					}
 				}
 			}
 			catch { }
 		}
+	}
+
+	public void SavePosition ()
+	{
+		try { inv.inventory.Position = this.transform.position; }
+		catch { }
+		try { inv.inventory.Rotation = this.transform.rotation; }
+		catch { }
+		inv.SaveToJson();
+		health Health = GetComponent<health>();
+		Health.Health = 1;
 	}
 }
