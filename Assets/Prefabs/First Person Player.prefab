@@ -357,7 +357,7 @@ Transform:
   - {fileID: 5338927050500306408}
   - {fileID: 392916131}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &5338927051937434087
 CharacterController:
@@ -401,6 +401,7 @@ MonoBehaviour:
   speed: 12
   gravity: -19.62
   jumpHeight: 3
+  mindamage: 0
   groundcheck: {fileID: 5338927050500306408}
   groundDistance: 0.6
   groundMask:
@@ -410,6 +411,7 @@ MonoBehaviour:
   x: 0
   y: 0
   z: 0
+  isGrounded: 0
 --- !u!114 &-8090202260464085364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
-  trans: {fileID: 5338927051937434084}
+  movement: {fileID: 0}
+  autosave: 0
 --- !u!114 &5338927052110749542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,7 +484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inv: {fileID: 0}
-  trans: {fileID: 5338927051937434084}
+  movement: {fileID: 5338927051937434085}
+  autosave: 1
 --- !u!114 &707999757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,9 +498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6760e9472e149488cbc3da82702c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  olHealth: 100
   Health: 0
   CurrentScene: SampleScene
+  olHealth: 100
   test: 1
 --- !u!1 &5338927052007509030
 GameObject:
