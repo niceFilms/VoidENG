@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -28,11 +26,11 @@ public class PlayerMovement : MonoBehaviour
         this.enabled = !this.enabled;
     }
 
-	// Update is called once per frame
-	void Update()
+    // Update is called once per frame
+    void Update ()
     {
 
-		isGrounded = Physics.CheckSphere(groundcheck.position, groundDistance, groundMask);
+        isGrounded = Physics.CheckSphere(groundcheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
@@ -40,36 +38,43 @@ public class PlayerMovement : MonoBehaviour
         }
 
         float x = Input.GetAxis("Horizontal");
-		float z = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.LeftShift) && Stamina > 0 && x+z != 0)
-            {
+        float z = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.LeftShift) && Stamina > 0 && x + z != 0)
+        {
             z *= 2;
             x *= 2;
-            Stamina -= 1*Time.deltaTime*20;
-            if (Stamina <= 0) {
+            Stamina -= 1 * Time.deltaTime * 20;
+            if (Stamina <= 0)
+            {
                 Stamina = 0;
             }
-            } 
-if (Stamina < 100) {
-        if (0 == x+z)
-            {
-                Stamina += 1*Time.deltaTime*20;
-            } else 
-                {
-                    if (Input.GetKey(KeyCode.LeftShift))
-                {
-            
-                    } else 
-                    {
-                        Stamina += 1*Time.deltaTime*10;
-                    }
         }
-}
+        if (Stamina < 100)
+        {
+            if (0 == x + z)
+            {
+                Stamina += 1 * Time.deltaTime * 20;
+            }
+            else
+            {
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+
+                }
+                else
+                {
+                    Stamina += 1 * Time.deltaTime * 10;
+                }
+            }
+        }
+
+        Stamina = Mathf.Clamp(Stamina, 0, 100);
+
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
