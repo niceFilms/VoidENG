@@ -13,7 +13,7 @@ public class SaveLocation : MonoBehaviour
 	float endAlpha = 1;
 
 	// The duration of the transition
-	float transitionDuration = 0.1f;
+	float transitionDuration = 0.2f;
 
 	// The elapsed time since the transition started
 	float elapsedTime = 0;
