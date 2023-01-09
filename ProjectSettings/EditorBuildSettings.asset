@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/BetaGameMap.unity
+    guid: 160861cf0960a64469fda5e491fb3511
+  - enabled: 1
     path: Assets/Scenes/Dead.unity
     guid: 0223b9c72686fe247864e8cb977f3e15
   m_configObjects: {}
