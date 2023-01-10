@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelTrigger : MonoBehaviour
 {
-	public string sceneName;
+	public string nextSceneName;
 	public SaveData inv;
 	public Vector3 startpos;
 
@@ -14,9 +11,10 @@ public class LevelTrigger : MonoBehaviour
 	{
 		if (c.tag == "Player")
 		{
-		inv.inventory.Position = startpos;
-		inv.SaveToJson();
-		UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+			inv.inventory.Position = startpos;
+			inv.inventory.Level = nextSceneName;
+			inv.SaveToJson();
+			UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
 		}
 	}
 }

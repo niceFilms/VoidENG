@@ -6,7 +6,7 @@ public class SaveData : MonoBehaviour
 {
     public Inventory inventory = new Inventory();
 
-    public bool save;
+	[HideInInspector] public bool save;
 
 	private void Start ()
 	{
