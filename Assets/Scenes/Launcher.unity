@@ -1176,20 +1176,54 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.23584908
       objectReference: {fileID: 0}
+    - target: {fileID: 4419177871290945193, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 936183595}
+    - target: {fileID: 4419177871290945193, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnButtonPress
+      objectReference: {fileID: 0}
+    - target: {fileID: 4419177871290945193, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeSceneNoScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4419177871290945196, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
       propertyPath: nextscene
       value: Menu
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4419177871290945196, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4419177871290945191, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 936183595}
   m_SourcePrefab: {fileID: 100100000, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
 --- !u!224 &936183593 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4419177871290945192, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
   m_PrefabInstance: {fileID: 936183592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &936183594 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4419177871290945191, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+  m_PrefabInstance: {fileID: 936183592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &936183595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936183594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd1ada0a60ee464ead362d10a9981f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextscene: Menu
 --- !u!1 &1170187323
 GameObject:
   m_ObjectHideFlags: 0

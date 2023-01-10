@@ -39,19 +39,24 @@ public class PlayerMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.LeftShift) && Stamina > 0 && x + z != 0)
+
+        Vector3 axis = new Vector3(x, 0, z);
+
+        if (Input.GetKey(KeyCode.LeftShift) && Stamina > 0)
         {
-            z *= 2;
-            x *= 2;
-            Stamina -= 1 * Time.deltaTime * 20;
-            if (Stamina <= 0)
-            {
-                Stamina = 0;
-            }
+            if (axis.x != 0 || axis.z != 0) {
+                axis.z *= 2;
+                axis.x *= 2;
+                Stamina -= 1 * Time.deltaTime * 20;
+                if (Stamina <= 0)
+                {
+                    Stamina = 0;
+                }
+            } 
         }
         if (Stamina < 100)
         {
-            if (0 == x + z)
+            if (0 == axis.x && 0 == axis.z)
             {
                 Stamina += 1 * Time.deltaTime * 20;
             }
@@ -70,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
         Stamina = Mathf.Clamp(Stamina, 0, 100);
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = transform.right * axis.x + transform.forward * axis.z;
 
         controller.Move(move * speed * Time.deltaTime);
 

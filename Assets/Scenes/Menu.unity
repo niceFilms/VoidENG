@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 10278.911, g: 9813.649, b: 10479.821, a: 1}
+  m_IndirectSpecularColor: {r: 10188.821, g: 9720.95, b: 10409.11, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2075,7 +2075,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1029349738}
-        m_TargetAssemblyTypeName: NewGame, Assembly-CSharp
+        m_TargetAssemblyTypeName: ChangeSceneNoScript, Assembly-CSharp
         m_MethodName: OnButtonPress
         m_Mode: 1
         m_Arguments:
@@ -2133,11 +2133,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1029349733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0497ed901a9a9fd4bbd7dd93702abae2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5bd1ada0a60ee464ead362d10a9981f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savedata: {fileID: 671571173}
-  newgamepos: {x: 0, y: 7, z: 0}
   nextscene: SampleScene
 --- !u!1 &1126701320 stripped
 GameObject:
@@ -2931,6 +2929,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4419177871290945196, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
+      propertyPath: savedata
+      value: 
+      objectReference: {fileID: 671571173}
+    - target: {fileID: 4419177871290945196, guid: 43a872f0ceaf24d44affaf5dbcc6515f, type: 3}
       propertyPath: nextscene
       value: SampleScene
       objectReference: {fileID: 0}
@@ -2952,6 +2954,7 @@ GameObject:
   - component: {fileID: 1654140336}
   - component: {fileID: 1654140335}
   - component: {fileID: 1654140334}
+  - component: {fileID: 1654140339}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3064,6 +3067,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1654140339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1654140333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06add5af92d35ba44bdaf010c5edfe2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 1
 --- !u!1 &1659838845
 GameObject:
   m_ObjectHideFlags: 0

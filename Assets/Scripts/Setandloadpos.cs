@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Setandloadpos : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class Setandloadpos : MonoBehaviour
 		try { inv.inventory.Position = this.transform.position; }
 		catch { }
 		try { inv.inventory.Rotation = this.transform.rotation; }
+		catch { }
+		Scene uscene = SceneManager.GetActiveScene();
+		try { inv.inventory.Level = uscene.name; }
 		catch { }
 
 		if (autosave)
@@ -46,6 +50,9 @@ public class Setandloadpos : MonoBehaviour
 		try { inv.inventory.Position = this.transform.position; }
 		catch { }
 		try { inv.inventory.Rotation = this.transform.rotation; }
+		catch { }
+		Scene uscene = SceneManager.GetActiveScene();
+		try { inv.inventory.Level = uscene.name; }
 		catch { }
 		inv.SaveToJson();
 		health Health = GetComponent<health>();

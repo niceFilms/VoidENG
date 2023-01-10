@@ -9,6 +9,7 @@ public class SwitchSceneOnClick : MonoBehaviour
 	public string nextscene;
 	public void OnButtonPress ()
 	{
-		UnityEngine.SceneManagement.SceneManager.LoadScene(nextscene);
+		savedata.inventory.Level = nextscene;
+		UnityEngine.SceneManagement.SceneManager.LoadScene("SceneManager");
 	}
 }
