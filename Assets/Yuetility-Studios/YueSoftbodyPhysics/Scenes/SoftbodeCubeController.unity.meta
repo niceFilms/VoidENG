@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b02be2f0a1873a042a91515f328789ad
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224754
+  packageName: Yue Softbody Physics
+  packageVersion: 1.0
+  assetPath: Assets/Yuetility-Studios/YueSoftbodyPhysics/Scenes/SoftbodeCubeController.unity
+  uploadId: 511471
