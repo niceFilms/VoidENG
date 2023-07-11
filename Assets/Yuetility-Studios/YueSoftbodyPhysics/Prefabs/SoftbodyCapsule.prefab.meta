@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f548b768dde27fd4d9af4956464f2190
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224754
+  packageName: Yue Softbody Physics
+  packageVersion: 1.0
+  assetPath: Assets/Yuetility-Studios/YueSoftbodyPhysics/Prefabs/SoftbodyCapsule.prefab
+  uploadId: 511471

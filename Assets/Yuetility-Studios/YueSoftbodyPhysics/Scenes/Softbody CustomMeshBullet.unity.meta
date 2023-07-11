@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2b0ff210095206f418727a827c3ffa5c
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224754
+  packageName: Yue Softbody Physics
+  packageVersion: 1.0
+  assetPath: Assets/Yuetility-Studios/YueSoftbodyPhysics/Scenes/Softbody CustomMeshBullet.unity
+  uploadId: 511471
